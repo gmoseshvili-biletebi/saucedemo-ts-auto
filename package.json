@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-auto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript QA automation framework for SauceDemo",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:login": "playwright test tests/login.spec.ts",
+    "report": "playwright show-report reports/html-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^25.6.0",
+    "typescript": "^5.6.3"
+  }
+}
